@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estructuras de Datos - CS2031 Team</title>
+    <!-- FIX CSS modular: styles/ referenciados correctamente como cabeceras -->
     <link rel="stylesheet" href="styles/page.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/nav.css" />
@@ -34,16 +35,16 @@
 
             <ul class="nav__list">
               <li class="nav__item">
-                <!-- BUG #1: este enlace apunta a la seccion equivocada, deberia ser #hero -->
-                <a href="#inicio" class="nav__link">Inicio</a>
+                <!-- FIX BUG #1: corregido #inicio → #hero -->
+                <a href="#hero" class="nav__link">Inicio</a>
               </li>
               <li class="nav__item">
-                <!-- BUG #2: este enlace apunta a la seccion equivocada, deberia ser #about -->
-                <a href="#sobre" class="nav__link">Acerca de</a>
+                <!-- FIX BUG #2: corregido #sobre → #about -->
+                <a href="#about" class="nav__link">Acerca de</a>
               </li>
               <li class="nav__item">
-                <!-- BUG #3: este enlace apunta a la seccion equivocada, deberia ser #team -->
-                <a href="#integrantes" class="nav__link">Equipo</a>
+                <!-- FIX BUG #3: corregido #integrantes → #team -->
+                <a href="#team" class="nav__link">Equipo</a>
               </li>
             </ul>
           </div>
@@ -134,12 +135,12 @@
                 Las personas detrás de este proyecto
               </p>
             </div>
-            <!-- Inicio tarjeta integrante 1-->
+            <!-- FIX ESTRUCTURA: un solo team__grid conteniendo todas las tarjetas -->
             <div class="team__grid">
-              <!-- INTEGRANTE 1: Reemplaza con tus datos -->
+
+              <!-- Inicio tarjeta integrante 1 -->
               <div class="team-card">
                 <div class="team-card__image">
-                  <!-- Aquí tu foto de perfil (URL de GitHub u otra imagen) -->
                   <img
                     src="https://avatars.githubusercontent.com/u/170377201?v=4"
                     alt="Sebastian"
@@ -147,19 +148,15 @@
                   />
                 </div>
                 <div class="team-card__content">
-                  <!-- Aquí tu nombre completo -->
                   <h3 class="team-card__name">Sebastian Chahuara Galdos</h3>
-                  <!-- Aquí tu especialidad o rol -->
                   <p class="team-card__role">Backend Developer</p>
                   <div class="team-card__social">
-                    <!-- Reemplaza # con tu URL de GitHub -->
                     <a
                       href="https://github.com/barcobasurero2708"
                       class="team-card__social-link team-card__social-link--github"
                     >
                       <i class="fab fa-github"></i>
                     </a>
-                    <!-- Reemplaza # con tu URL de LinkedIn -->
                     <a
                       href="https://pe.linkedin.com/"
                       class="team-card__social-link team-card__social-link--linkedin"
@@ -169,14 +166,11 @@
                   </div>
                 </div>
               </div>
-              <!-- Fin tarjeta integrante 1-->
-              
-              <!-- Inicio tarjeta del integrante 2 -->
-               <div class="team__grid">
-              <!-- INTEGRANTE 1: Reemplaza con tus datos -->
+              <!-- Fin tarjeta integrante 1 -->
+
+              <!-- Inicio tarjeta integrante 2 -->
               <div class="team-card">
                 <div class="team-card__image">
-                  <!-- Aquí tu foto de perfil (URL de GitHub u otra imagen) -->
                   <img
                     src="https://github.com/UTECAaron.png"
                     alt="Aaron"
@@ -184,19 +178,15 @@
                   />
                 </div>
                 <div class="team-card__content">
-                  <!-- Aquí tu nombre completo -->
                   <h3 class="team-card__name">Aaron Romano Castro</h3>
-                  <!-- Aquí tu especialidad o rol -->
                   <p class="team-card__role">Backend Developer</p>
                   <div class="team-card__social">
-                    <!-- Reemplaza # con tu URL de GitHub -->
                     <a
                       href="https://github.com/UTECAaron"
                       class="team-card__social-link team-card__social-link--github"
                     >
                       <i class="fab fa-github"></i>
                     </a>
-                    <!-- Reemplaza # con tu URL de LinkedIn -->
                     <a
                       href="https://www.linkedin.com/in/aaron-adriano-romano-castro-983b70380/"
                       class="team-card__social-link team-card__social-link--linkedin"
@@ -206,16 +196,10 @@
                   </div>
                 </div>
               </div>
-              <!-- Fin tarjeta integrante 2-->
+              <!-- Fin tarjeta integrante 2 -->
 
-
-              
-              <!-- Inicio tarjeta del integrante 3 -->
-
-
-              
-              <!-- Fin tarjeta del integrante 3 -->  
             </div>
+            <!-- Fin team__grid -->
           </div>
         </section>
       </main>
